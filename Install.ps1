@@ -19,7 +19,9 @@ if ($existing -and $existing.InstallLocation -ne $publishDir) {
     Remove-AppxPackage -Package $existing.PackageFullName
     $existing = $null
 }
-if (-not $existing) {
+[xml]$packageManifest = Get-Content -LiteralPath (Join-Path $publishDir 'AppxManifest.xml') -Raw
+$packageVersion = [version]$packageManifest.Package.Identity.Version
+if (-not $existing -or $existing.Version -ne $packageVersion) {
     Add-AppxPackage -Register (Join-Path $publishDir 'AppxManifest.xml') -ForceApplicationShutdown
     Write-Host '扩展已注册。打开 PowerToys 命令面板，运行 Reload，再搜索“定时关机”。'
 } else {

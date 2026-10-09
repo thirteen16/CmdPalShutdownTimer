@@ -1,4 +1,4 @@
-Microsoft PowerToys extension template: Program.cs, app.manifest and Assets.
+Microsoft PowerToys extension template: Program.cs and app.manifest.
 Copyright (c) Microsoft Corporation.
 Source: https://github.com/microsoft/PowerToys
 

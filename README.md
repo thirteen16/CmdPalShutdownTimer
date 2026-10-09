@@ -26,7 +26,7 @@ GitHub 只提交源码、配置、脚本、说明和 `Assets` 图标。`publish`
 
 - 五个 `.cs` 文件：扩展入口、命令、页面、关机逻辑和提示框。
 - `.csproj`、`app.manifest`、`AppxManifest.xml`、`Directory.Build.targets`、`nuget.config`：编译和注册配置。
-- `Assets`：注册所需图标。
+- `Assets`：三个 PNG 用于应用包和开始菜单；`ShutdownTimer.ico` 用于 EXE。采用红底白色经典电源符号。命令面板图标使用 Segoe Fluent 的电源符号。
 - `Install.ps1`、`Uninstall.ps1`：安装与卸载；`THIRD-PARTY-NOTICES.md`：微软模板 MIT 许可。
 
 参考：[微软扩展模型](https://learn.microsoft.com/zh-cn/windows/powertoys/command-palette/extensibility-overview)、[ShutdownTimer](https://github.com/thirteen16/ShutdownTimer)。

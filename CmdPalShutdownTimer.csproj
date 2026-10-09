@@ -10,6 +10,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\ShutdownTimer.ico</ApplicationIcon>
     <AssemblyName>ShutdownTimerExtension</AssemblyName>
     <RootNamespace>ShutdownTimerExtension</RootNamespace>
     <PublishTrimmed>false</PublishTrimmed>
