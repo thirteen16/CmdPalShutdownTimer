@@ -1,0 +1,11 @@
+# 本地运行文件与构建缓存，不上传 GitHub
+/publish/
+/bin/
+/obj/
+/.nuget/
+/.vs/
+# 本地调试与打包文件
+*.user
+*.suo
+*.pdb
+*.zip

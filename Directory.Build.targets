@@ -1,0 +1,8 @@
+<Project>
+  <!-- Generate the WinRT projection using NuGet metadata instead of requiring a machine-wide Windows SDK. -->
+  <Target Name="UseNuGetWindowsMetadata" BeforeTargets="CsWinRTGenerateProjection">
+    <PropertyGroup>
+      <CsWinRTWindowsMetadata>"$(NuGetPackageRoot)microsoft.windows.sdk.net.ref\10.0.26100.57\winmd"</CsWinRTWindowsMetadata>
+    </PropertyGroup>
+  </Target>
+</Project>
